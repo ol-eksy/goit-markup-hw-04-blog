@@ -1,0 +1,134 @@
+:root {
+  --main-color-of-text: #626262;
+  --primary-font-stack: "Playfair Display", serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: var(--main-color-of-text);
+  font-family: var(--primary-font-stack);
+}
+
+/* Container */
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-nav {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 55px;
+  margin-bottom: 85px;
+}
+
+.page-nav:nth-child(1) {
+  padding-left: 110px;
+}
+
+.nav-link {
+  color: var(--main-color-of-text);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-link {
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #03a9f4;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.feature-information {
+  flex-basis: calc(100% / 2 - 30px);
+
+  flex-grow: 0;
+  margin-right: 50px;
+  margin-bottom: 135px;
+}
+
+.feature-information:nth-child(2n) {
+  margin-right: 0;
+}
+
+.feature-information:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+.information-pretitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  list-style: none;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.information-title {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.information-text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 165px;
+  height: 60px;
+  border: 1px solid var(--main-color-of-text);
+}
+/* font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+.issues {
+  display: flex;
+  flex-wrap: wrap;
+}
+.last-link {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+  align-items: flex-start;
+}
